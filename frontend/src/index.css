@@ -1,0 +1,26 @@
+:root {
+  --color-bg-start: #0f172a;       /* Dark navy - gradient start background */
+  --color-bg-end: #1e293b;         /* Slate gray - gradient end background */
+  --color-primary-accent: #3b82f6; /* Sky blue - primary buttons, highlights */
+  --color-secondary-accent: #a855f7; /* Violet - secondary accents */
+  --color-text-primary: #f8fafc;   /* Soft white - main text */
+  --color-text-secondary: #cbd5e1; /* Light slate - subtitles, muted text */
+  --color-border: #334155;         /* Slate border - dividers and borders */
+  --color-hover-glow: #38bdf8;    /* Cyan glow - hover/focus states */
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: var(--color-text-primary); 
+  margin: 0;
+}

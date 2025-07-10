@@ -25,13 +25,15 @@ const Hero = () => {
             "I build modern, responsive, and accessible websites & apps using React, Tailwind CSS, and Laravel."}
         </p>
 
-        <button
+        <a href="https://t.me/winminthant" target="_blank">
+          <button
           type="button"
-          className="rounded-full font-bold hover:scale-105 transition-all duration-200 px-6 py-3 text-white"
+          className="rounded font-bold hover:scale-105 transition-all duration-200 px-6 py-3 text-white"
           style={{ background: "var(--color-primary-accent)" }}
         >
           Contact Me
         </button>
+        </a>
       </div>
 
       {/* Right Image Section */}

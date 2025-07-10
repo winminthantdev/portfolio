@@ -14,10 +14,9 @@ export const datas = {
       "I craft responsive websites and engaging user interfaces with React.js, Tailwind CSS, and modern web technologies.",
   },
   about: {
-    title: "About Me",
     description:
-      "I'm a developer from Myanmar with a strong focus on frontend and UI/UX design. I’m currently studying Computer Science at University of the People and have hands-on experience in mobile repair services and tech content creation.",
-    resumeLink: "/resume/winminthant-resume.pdf",
+      "I'm Win Min Thant, a developer currently focused on full-stack web development. I'm studying Computer Science at the University of the People, with previous studies at Yadanabon University paused due to the political situation. I have hands-on experience in mobile phone repair, have worked as a computer teaching assistant, and actively share tech knowledge through my digital content pages. I'm building projects using PHP, React.js, Laravel, MySQL, and Tailwind CSS, aiming to create practical and user-friendly web applications.",
+    resumeLink: "/resume/winminthant.pdf",
   },
   projects: [
     {
@@ -52,11 +51,11 @@ export const datas = {
     { name: "jQuery", icon: "jQ" },
     { name: "Bootstrap", icon: "BS" },
     { name: "Tailwind", icon: "TW" },
-    { name: "ReactJs (Beginner)", icon: "React" },
+    { name: "ReactJs ", icon: "React" },
     { name: "PHP", icon: "PHP" },
     { name: "Java", icon: "Java" },
-    { name: "Laravel (Beginner)", icon: "Laravel" },
-    { name: "Python (Intermediate)", icon: "Py" },
+    { name: "Laravel ", icon: "Laravel" },
+    { name: "Python", icon: "Py" },
     { name: "XML", icon: "XML" },
     { name: "JSON", icon: "JSON" },
     { name: "MySQL", icon: "MySQL" },

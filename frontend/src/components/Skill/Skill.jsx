@@ -32,12 +32,13 @@ const Skill = () => {
             <div
               className="text-3xl md:text-4xl flex items-center justify-center 
                    w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br 
-                   from-[#3b82f6]/20 to-[#a855f7]/20 rounded-xl mb-2"
+                   from-[#3b82f6]/20 to-[#a855f7]/20  rounded-xl mb-2"
               style={{ color: "var(--color-primary-accent)" }}
             >
-              {skill.icon}
-              {/* If using images, it would look like this: */}
-            {/* <img src={/path/to/icons/${skill.name.toLowerCase()}.svg} alt={skill.name} className="w-20 h-20 md:w-24 md:h-24 mb-2" /> */}
+              {/* {skill.icon} */}
+            <div className="w-20 h-20 flex justify-center items-center">
+              <img src={skill.icon} alt={skill.name} className="w-full h-full object-contain" />
+            </div>
            
             </div>
             <p className="text-sm md:text-base font-medium  text-center" style={{ color: "var(--color-text-primary)" }}>

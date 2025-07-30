@@ -6,7 +6,6 @@ const About = () => {
     <section
       className="flex flex-col items-center p-8 md:p-16"
       style={{
-        background: "var(--color-bg-end)",
         color: "var(--color-text-primary)",
       }}
     >

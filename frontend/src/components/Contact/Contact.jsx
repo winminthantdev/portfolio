@@ -2,65 +2,29 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section className="p-8 md:p-16 bg-bg-start text-text-primary text-center">
-      <h2 className="text-2xl md:text-5xl mb-12 font-bold text-primary-accent">Contact Me</h2>
-      <div className="flex flex-col gap-8 max-w-xl mx-auto bg-bg-end p-8 md:p-12
-                      rounded-xl shadow-2xl border border-border-color">
-
-        <div className="mb-4">
-          <h3 className="text-xl md:text-2xl font-semibold text-text-primary mb-2">Phone:</h3>
-          <a href="tel:+959263038660" className="text-sm md:text-xl text-text-secondary hover:text-hover-glow transition-colors duration-200">
-            +959 2630 38 660 
-          </a>
-        </div>
-
-        <div className="mb-4">
-          <h3 className="text-xl md:text-2xl font-semibold text-text-primary mb-2">Email:</h3>
-          <a href="mailto:winminthant.gwin@gmail.com" className="text-sm md:text-xl text-text-secondary hover:text-hover-glow transition-colors duration-200">
-            winminthant.gwin@gmail.com 
-          </a>
-        </div>
-
-        <div>
-          <h3 className="text-xl md:text-2xl font-semibold text-text-primary mb-2">Address:</h3>
-          <p className="text-sm md:text-xl text-text-secondary m-0">
-            Hlaing, Yangon
-          </p>
-        </div>
-
-        {/* Simple Contact Form Placeholder */}
-        <div className="mt-8 pt-8 border-t border-border-color">
-          <h3 className="text-2xl font-semibold text-text-primary mb-6">Send me a message!</h3>
-          <form className="flex flex-col gap-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="p-3 rounded-md border border-border-color bg-bg-start text-text-primary
-                         placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-primary-accent"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="p-3 rounded-md border border-border-color bg-bg-start text-text-primary
-                         placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-primary-accent"
-            />
-            <textarea
-              placeholder="Your Message"
-              rows="5"
-              className="p-3 rounded-md border border-border-color bg-bg-start text-text-primary
-                         placeholder-text-secondary resize-y focus:outline-none focus:ring-2 focus:ring-primary-accent"
-            ></textarea>
-            <button
-              type="submit"
-              className="px-6 py-3 text-lg bg-secondary-accent text-text-primary
-                         rounded-md shadow-lg hover:bg-hover-glow transition-all duration-300
-                         transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-hover-glow mt-4"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
+    <section className="p-8 md:p-16">
+      <form className="flex flex-col items-center text-sm border shadow rounded-xl p-8">
+            <h2 className="text-4xl md:text-5xl mb-12 font-bold" style={{ color: "var(--color-text-primary)" }} >Contact Me</h2>
+            <p className="text-sm text-gray-500 text-center pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />Lorem Ipsum has been the industry's standard dummy text.</p>
+            
+            <div className="flex flex-col md:flex-row items-center gap-8 w-[350px] md:w-[700px]">
+                <div className="w-full">
+                    <label className="text-[#cbd5e1]" htmlFor="name">Your Name</label>
+                    <input className="h-12 p-2 mt-2 w-full border  rounded outline-none focus:border-indigo-300" type="text" required />
+                </div>
+                <div className="w-full">
+                    <label className="text-[#cbd5e1]" htmlFor="name">Your Email</label>
+                    <input className="h-12 p-2 mt-2 w-full border rounded outline-none focus:border-indigo-300" type="email" required />
+                </div>
+            </div>
+        
+            <div className="mt-6 w-[350px] md:w-[700px]">
+                <label className="text-[#cbd5e1]" htmlFor="name">Message</label>
+                <textarea className="w-full mt-2 p-2 h-40 border rounded resize-none outline-none focus:border-indigo-300" required></textarea>
+            </div>
+        
+            <button type="submit" className="mt-5 bg-indigo-600 text-white h-12 w-56 px-4 rounded active:scale-95 transition">Send Message</button>
+    </form>
     </section>
   );
 }

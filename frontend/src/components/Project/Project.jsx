@@ -3,17 +3,18 @@ import { projects } from '../../assets/assets';
 
 const Project = () => {
   return (
-    <section className="p-8 md:p-16 bg-[#0f172a] text-[#f8fafc] text-center">
+    <section className="p-8 md:p-16 text-[#f8fafc] text-center">
       <h2 className="text-4xl md:text-5xl mb-12 font-bold text-[#cbd5e1]">My Projects</h2>
       <div className="flex flex-col gap-12 max-w-7xl mx-auto">
         {projects.map(project => (
-          <div
+          <a 
+            href={project.link}
             key={project.id}
             className={`flex flex-col md:flex-row bg-bg-end rounded-xl overflow-hidden
-                        shadow-2xl border border-#334155 transform hover:scale-[1.02] transition-transform duration-300
+                        shadow-2xl border border-#334155 transform cursor-pointer hover:scale-[1.02] hover:bg-wite/5 transition-transform duration-300
                         ${project.id % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
+            target='_blank'
           >
-            {/* Project Photo */}
             <div className="md:w-1/2 flex justify-center items-center p-4">
               <img
                 src={project.photo}
@@ -22,25 +23,18 @@ const Project = () => {
               />
             </div>
 
-            {/* Project Details */}
             <div className="md:w-1/2 p-8 flex flex-col justify-center items-center md:items-start text-center md:text-left">
               <h3 className="text-3xl font-semibold mb-4 text-[#f8fafc]">{project.title}</h3>
               <p className="text-lg leading-relaxed text-[#cbd5e1] mb-6">{project.details}</p>
-              <div className="flex justify-between items-center space-x-4 my-2">
+              <div className="flex flex-wrap gap-4 items-center my-2">
                 {
                 project.language.map((language,idx)=>(
-                  <div className='bg-gradient-to-br from-[#3b82f6]/20 to-[#a855f7]/20 rounded px-4 py-2'>{language}</div>
+                  <div key={idx} className='bg-gradient-to-br from-[#3b82f6]/20 to-[#a855f7]/20 rounded px-4 py-2'>{language}</div>
                 ))
               }
               </div>
-              <a href={project.link} target="_blank" rel="noopener noreferrer"
-                 className="px-6 py-3 text-lg bg-[#3b82f6] text-[#f8fafc]
-                            rounded-md shadow-lg hover:bg-[#38bdf8] transition-all duration-300
-                            transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#38bdf8]">
-                View Project
-              </a>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>

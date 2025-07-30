@@ -164,17 +164,22 @@ export const projects = [
   {
     id: 4,
     title: 'QuickStay Hotel Booking',
-    details: 'Full UI/UX landing page design for a hotel booking service. Includes hotel listings, booking CTA, and smooth animations.',
-    photo: fooddali,
+    details: 'Full UI/UX page design for a hotel booking service. Includes hotel listings, booking CTA, and smooth animations.',
+    photo: hotelbooking,
     link: 'https://quickstaywithus.onrender.com/',
     language: ['HTML', 'Tailwind', 'Jquery', 'JSON', 'ReactJs']
   },
   {
     id: 5,
     title: 'Tomato Food Delivery',
-    details: 'A question and answer web application for students and staff. Built with PHP, jQuery, AJAX, and Tailwind CSS. Includes voting, sorting, and filtering.',
-    photo: hotelbooking,
+    details: 'A modern and responsive food delivery web app built with ReactJs and JSON for data handling. Features include product listings, category filters, and a simple cart interface — designed for fast food ordering and smooth user experience.',
+    photo: fooddali,
     link: 'https://tomato-24y8.onrender.com/',
     language: ['HTML', 'CSS', 'JSON', 'ReactJs']
   }
 ];
+
+
+
+// Particles
+export const particles =  "./particles.json" ;

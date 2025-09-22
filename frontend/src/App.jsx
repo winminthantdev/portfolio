@@ -8,16 +8,17 @@ import SkillPage from "./pages/SkillPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import CertificatePage from "./pages/CertificatePage";
-
+import ParticlesBg from "./ParticlesBg";
 
 function App() {
   return (
     <div className="app">
+            <ParticlesBg />
       <Navbar />
       <main>
         <section id="home"><HomePage /></section>
         <section id="about"><AboutPage /></section>
-        <section id="skills"><SkillPage /></section>
+        {/* <section id="skills"><SkillPage /></section> */}
         <section id="projects"><ProjectPage /></section>
         {/* UI/UX section */}
         <section id="uiux"><UiUxPage /></section>

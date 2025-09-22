@@ -3,6 +3,7 @@ import { datas, photos } from "./../../assets/assets";
 
 const About = () => {
   return (
+    
     <section
       className="flex flex-col items-center p-8 md:p-16"
       style={{

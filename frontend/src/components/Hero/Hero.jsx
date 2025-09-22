@@ -1,49 +1,56 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { datas, photos } from "./../../assets/assets";
 
 const Hero = () => {
   return (
-    <div className="min-h-[90vh] flex flex-col-reverse md:flex-row items-center justify-center gap-8 px-6 md:px-12 py-10">
-      {/* Left Text Section */}
-      <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
-        <h2 className="text-2xl md:text-5xl font-bold text-white">
+    <div className="min-h-[90vh] flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 py-10 gap-8">
+      {/* Text Section */}
+      <motion.div
+        className="w-full md:w-1/2 space-y-4 text-center md:text-left"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h1 className="text-4xl md:text-6xl font-bold text-white">
           {datas.home.greeting || "Hi, I'm Win Min Thant"}
-        </h2>
+        </h1>
 
-        <p
-          className="text-lg md:text-xl font-semibold"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
-          {datas.home.tagline || "Creative Full Stack Developer"}
+        <p className="text-lg md:text-xl text-gray-300">
+          {datas.home.tagline || "Full Stack Developer"}
         </p>
 
-        <p
-          className="text-xs md:text-base leading-relaxed"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
+        <p className="text-sm md:text-base text-gray-400 leading-relaxed">
           {datas.home.intro ||
-            "I build modern, responsive, and accessible websites & apps using React, Tailwind CSS, and Laravel."}
+            "I build clean, modern, and responsive web applications using React, Tailwind CSS, and Laravel."}
         </p>
 
-        <a href="https://t.me/winminthant" target="_blank">
-          <button
-          type="button"
-          className="rounded font-bold hover:scale-105 transition-all duration-200 px-6 py-3 text-white"
-          style={{ background: "var(--color-primary-accent)" }}
-        >
-          Contact Me
-        </button>
-        </a>
-      </div>
+        <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">
+          <a href="https://t.me/winminthant" target="_blank">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-6 py-3 font-semibold text-white bg-blue-600 bg-opacity-80 rounded-lg hover:bg-opacity-100 transition duration-300"
+            >
+              Contact Me
+            </motion.button>
+          </a>
+        </div>
+      </motion.div>
 
-      {/* Right Image Section */}
-      <div className="w-full md:w-1/2 flex justify-center">
+      {/* Image Section */}
+      <motion.div
+        className="w-full md:w-1/2 flex justify-center md:justify-end"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <img
           src={photos.profile_1}
           alt="Profile"
-          className="w-[90%] md:w-[60%] max-w-xs md:max-w-md lg:max-w-lg object-contain rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
+          className="w-[60%] md:w-[70%] lg:w-[60%] object-contain rounded-full hover:scale-105 transition-transform duration-300"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

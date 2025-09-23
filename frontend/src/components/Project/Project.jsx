@@ -3,7 +3,8 @@ import { projects } from '../../assets/assets';
 
 const Project = () => {
   return (
-    <section className="p-8 md:p-16 text-[#f8fafc] text-center">
+    <section className=" text-[#f8fafc] text-center pt-8">
+     
       <div className="flex flex-col gap-12 max-w-7xl mx-auto">
         {/* {projects.map(project => (
           <a 
@@ -36,13 +37,48 @@ const Project = () => {
           </a>
         ))} */}
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="border rounded overflow-hidden group backdrop-blur-[2px]">
+
+        <div className="border rounded overflow-hidden group backdrop-blur-[2px] rounded-lg">
           <div className="w-full h-60 bg-white">
-            <img src={projects[0].photo} className='w-full h-full object-contain group-hover:scale-101 transition-all' alt="" />
+            <img src={projects[0].photo} className='w-full h-full object-contain group-hover:scale-101' alt="" />
           </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, hic quasi! Eaque minima adipisci voluptate! Sint nemo sit culpa autem.</p>
+          <div className="p-2">
+            <h3 className='text-xl font-bold text-left'>Title Here</h3>
+            <p className='text-sm truncate'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, hic quasi! Eaque minima adipisci voluptate! Sint nemo sit culpa autem.</p>
+            <div className="flex flex-wrap py-2">
+              <div className="text-sm bg-gray-400 rounded-full py-1 px-2">ReactJs</div>
+            </div>
+          </div>
         </div>
+
+        <div className="border rounded overflow-hidden group backdrop-blur-[2px] rounded-lg">
+          <div className="w-full h-60 bg-white">
+            <img src={projects[0].photo} className='w-full h-full object-contain group-hover:scale-101' alt="" />
+          </div>
+          <div className="p-2">
+            <h3 className='text-xl font-bold text-left'>Title Here</h3>
+            <p className='text-sm truncate'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, hic quasi! Eaque minima adipisci voluptate! Sint nemo sit culpa autem.</p>
+            <div className="flex flex-wrap py-2">
+              <div className="text-sm bg-gray-400 rounded-full py-1 px-2">ReactJs</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border rounded overflow-hidden group backdrop-blur-[2px] rounded-lg">
+          <div className="w-full h-60 bg-white">
+            <img src={projects[0].photo} className='w-full h-full object-contain group-hover:scale-101' alt="" />
+          </div>
+          <div className="p-2">
+            <h3 className='text-xl font-bold text-left'>Title Here</h3>
+            <p className='text-sm truncate'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, hic quasi! Eaque minima adipisci voluptate! Sint nemo sit culpa autem.</p>
+            <div className="flex flex-wrap py-2">
+              <div className="text-sm bg-gray-400 rounded-full py-1 px-2">ReactJs</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );

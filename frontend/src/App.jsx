@@ -12,7 +12,7 @@ import ParticlesBg from "./ParticlesBg";
 function App() {
   return (
     <div className="app">
-            {/* <ParticlesBg /> */}
+      <ParticlesBg />
       <Navbar />
       <main className="container mx-auto">
         <section id="home"><HomePage /></section>

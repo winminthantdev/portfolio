@@ -40,41 +40,18 @@ const Project = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
-        <div className="border rounded overflow-hidden group backdrop-blur-[2px] rounded-lg">
+        <div className="border border-gray-400 rounded overflow-hidden backdrop-blur-[2px] hover:backdrop-blur-[4px] rounded-lg cursor-pointer transition">
           <div className="w-full h-60 bg-white">
-            <img src={projects[0].photo} className='w-full h-full object-contain group-hover:scale-101' alt="" />
+            <img src={projects[0].photo} className='w-full h-full object-contain' alt="" />
           </div>
-          <div className="p-2">
+          <div className="p-4">
             <h3 className='text-xl font-bold text-left'>Title Here</h3>
             <p className='text-sm truncate'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, hic quasi! Eaque minima adipisci voluptate! Sint nemo sit culpa autem.</p>
-            <div className="flex flex-wrap py-2">
-              <div className="text-sm bg-gray-400 rounded-full py-1 px-2">ReactJs</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="border rounded overflow-hidden group backdrop-blur-[2px] rounded-lg">
-          <div className="w-full h-60 bg-white">
-            <img src={projects[0].photo} className='w-full h-full object-contain group-hover:scale-101' alt="" />
-          </div>
-          <div className="p-2">
-            <h3 className='text-xl font-bold text-left'>Title Here</h3>
-            <p className='text-sm truncate'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, hic quasi! Eaque minima adipisci voluptate! Sint nemo sit culpa autem.</p>
-            <div className="flex flex-wrap py-2">
-              <div className="text-sm bg-gray-400 rounded-full py-1 px-2">ReactJs</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="border rounded overflow-hidden group backdrop-blur-[2px] rounded-lg">
-          <div className="w-full h-60 bg-white">
-            <img src={projects[0].photo} className='w-full h-full object-contain group-hover:scale-101' alt="" />
-          </div>
-          <div className="p-2">
-            <h3 className='text-xl font-bold text-left'>Title Here</h3>
-            <p className='text-sm truncate'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, hic quasi! Eaque minima adipisci voluptate! Sint nemo sit culpa autem.</p>
-            <div className="flex flex-wrap py-2">
-              <div className="text-sm bg-gray-400 rounded-full py-1 px-2">ReactJs</div>
+            <div className="flex flex-wrap gap-4 py-2">
+              <div className="text-sm border border-gray-400 rounded-full py-1 px-3">ReactJs</div>
+              <div className="text-sm border border-gray-400 rounded-full py-1 px-3">ReactJs</div>
+              <div className="text-sm border border-gray-400 rounded-full py-1 px-3">ReactJs</div>
+              <div className="text-sm border border-gray-400 rounded-full py-1 px-3">ReactJs</div>
             </div>
           </div>
         </div>

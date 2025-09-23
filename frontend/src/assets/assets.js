@@ -38,7 +38,7 @@ export const photos = {
 
 export const datas = {
   home: {
-    greeting: "Hi, I'm Win Min Thant 👋",
+    greeting: "Win Min Thant",
     tagline: "Passionate Full Stack Developer & UI/UX Designer",
     intro:
       "I craft responsive websites and engaging user interfaces with React.js, Tailwind CSS, and modern web technologies.",

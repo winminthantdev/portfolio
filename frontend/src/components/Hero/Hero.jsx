@@ -12,8 +12,9 @@ const Hero = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
+        <p>Hi, I'm</p>
         <h1 className="text-4xl md:text-6xl font-bold text-white">
-          {datas.home.greeting || "Hi, I'm Win Min Thant"}
+          {datas.home.greeting || "Win Min Thant"}
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300">
@@ -30,7 +31,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 font-semibold text-white bg-blue-600 bg-opacity-80 rounded-lg hover:bg-opacity-100 transition duration-300"
+              className="px-6 py-3 font-semibold text-white border rounded-lg hover:bg-opacity-100 transition duration-300"
             >
               Contact Me
             </motion.button>

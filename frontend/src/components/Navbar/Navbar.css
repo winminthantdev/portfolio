@@ -1,0 +1,35 @@
+.hover-effects:hover, .underlines{
+    color:  #0f172a;
+
+    position:relative;
+}
+
+.hover-effects:hover::after, .underlines::after{
+    content: '';
+
+    width: 80%;
+    height: 2px;
+    background: #0f172a;
+
+    position:absolute;
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    animation: myani .5s;
+}
+
+.underlines:hover{
+    animation: myani .5s;
+}
+
+@keyframes myani {
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 80%;
+    }
+}

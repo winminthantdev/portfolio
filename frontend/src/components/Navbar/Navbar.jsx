@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { datas } from "../../assets/assets";
+import "./Navbar.css"
 
 const Navbar = () => {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
-    { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
   ];
@@ -65,7 +65,7 @@ const Navbar = () => {
         </motion.div>
 
         {/* Nav Links */}
-        <ul className="flex space-x-4 text-lg font-medium">
+        <ul className="flex space-x-2 font-medium">
           {navItems.map(({ id, label }, index) => (
             <motion.li
               key={id}
@@ -76,10 +76,10 @@ const Navbar = () => {
               <a
                 href={`#${id}`}
                 onClick={() => setActiveSection(id)}
-                className={`px-5 py-2 rounded-full transition-all duration-500 ${
+                className={`font-bold rounded-full transition-all duration-500 px-5 py-2 ${
                   activeSection === id
-                    ? "bg-white/70 text-blue-600 shadow scale-105"
-                    : "text-white hover:bg-white/70 hover:text-blue-600 hover:shadow hover:scale-105"
+                    ? "underlines"
+                    : "text-white hover-effects"
                 }`}
               >
                 {label}
@@ -88,14 +88,14 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Download CV */}
+        {/* Download CV
         <motion.a
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 300 }}
           className="text-white"
         >
           Download CV
-        </motion.a>
+        </motion.a> */}
       </motion.nav>
 
       {/* Mobile Menu Button */}

@@ -4,9 +4,8 @@ import { projects } from '../../assets/assets';
 const Project = () => {
   return (
     <section className="p-8 md:p-16 text-[#f8fafc] text-center">
-      <h2 className="text-4xl md:text-5xl mb-12 font-bold text-[#cbd5e1]">My Projects</h2>
       <div className="flex flex-col gap-12 max-w-7xl mx-auto">
-        {projects.map(project => (
+        {/* {projects.map(project => (
           <a 
             href={project.link}
             key={project.id}
@@ -35,7 +34,15 @@ const Project = () => {
               </div>
             </div>
           </a>
-        ))}
+        ))} */}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="border rounded overflow-hidden group backdrop-blur-[2px]">
+          <div className="w-full h-60 bg-white">
+            <img src={projects[0].photo} className='w-full h-full object-contain group-hover:scale-101 transition-all' alt="" />
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, hic quasi! Eaque minima adipisci voluptate! Sint nemo sit culpa autem.</p>
+        </div>
       </div>
     </section>
   );

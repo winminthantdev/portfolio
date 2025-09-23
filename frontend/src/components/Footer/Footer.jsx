@@ -13,13 +13,10 @@ const Footer = () => {
                     About
                 </a>
                 <a href="#" className="font-medium text-gray-500 hover:text-black transition-all">
-                    Services
+                    Projects
                 </a>
                 <a href="#" className="font-medium text-gray-500 hover:text-black transition-all">
                     Contact
-                </a>
-                <a href="#" className="font-medium text-gray-500 hover:text-black transition-all">
-                    Help
                 </a>
             </div>
             <div className="flex items-center gap-4 mt-8 text-indigo-500">

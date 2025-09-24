@@ -1,0 +1,26 @@
+/* .myanis{
+    transform: translateY(400%);
+} */
+.myanis:hover .utpani1, .myanis:hover .utpani2{
+    animation: myaniupto .5s;
+    transform: translateY(0);
+}
+/* translate-y-[100%] */
+
+.myanis:hover .utpani1{
+    animation-delay: .2s;
+}
+
+.myanis:hover .utpani2{
+    animation-delay: .3s;
+}
+@keyframes myaniupto {
+    0%{
+        opacity: 0;
+        transform: translateY(400%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

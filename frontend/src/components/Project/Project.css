@@ -1,26 +1,20 @@
-/* .myanis{
-    transform: translateY(400%);
-} */
-.myanis:hover .utpani1, .myanis:hover .utpani2{
-    animation: myaniupto .5s;
-    transform: translateY(0);
-}
-/* translate-y-[100%] */
-
-.myanis:hover .utpani1{
-    animation-delay: .2s;
-}
-
-.myanis:hover .utpani2{
-    animation-delay: .3s;
-}
 @keyframes myaniupto {
-    0%{
-        opacity: 0;
-        transform: translateY(400%);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.group:hover .utpani1 {
+  animation: myaniupto 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.group:hover .utpani2 {
+  animation: myaniupto 0.5s ease-out forwards;
+  animation-delay: 0.4s;
 }

@@ -30,6 +30,11 @@ import product from "./project/product.png"
 import chatroom from "./project/chatroom.png"
 import fooddali from "./project/fooddali.png"
 import hotelbooking from "./project/hotelbooking.png"
+import thwarmal from "./project/thwarmal.png"
+import quickbite from "./project/quickbite.png"
+import technoland from "./project/technoland.png"
+import pptsoftwarehouse from "./project/pptsoftwarehouse.png"
+import commingsoon from "./project/commingsoon.jpg"
 
 export const photos = {
   profile_1,
@@ -143,6 +148,7 @@ export const projects = [
     details: 'A responsive dashboard UI built with modern layout and data display using React and Tailwind CSS. Includes sidebar navigation, analytics cards, and clean dark mode.',
     photo: dashboard,
     link: 'https://winminthantdev.github.io/dashboard/',
+    gitlink: 'https://github.com/winminthantdev/dashboard',
     language: ['HTML', 'Tailwind', 'Javascript']
   },
   {
@@ -151,6 +157,7 @@ export const projects = [
     details: 'A minimal and elegant product detail page concept showing product images, price, and features using React and Tailwind for fast prototyping.',
     photo: product,
     link: 'https://winminthantdev.github.io/productdetails/',
+    gitlink: 'https://github.com/winminthantdev/productdetails',
     language: ['HTML', 'Tailwind', 'Javascript']
   },
   {
@@ -159,6 +166,7 @@ export const projects = [
     details: 'A landing page for Talkie — a real-love dating app focused on true partnership. Includes branding, features section, and call-to-action.',
     photo: chatroom,
     link: 'https://talkiesocialapp.onrender.com/',
+    gitlink: 'https://github.com/winminthantdev/tomato',
     language: ['HTML', 'Tailwind', 'Jquery', 'JSON', 'Firebase']
   },
   {
@@ -167,6 +175,7 @@ export const projects = [
     details: 'Full UI/UX page design for a hotel booking service. Includes hotel listings, booking CTA, and smooth animations.',
     photo: hotelbooking,
     link: 'https://quickstaywithus.onrender.com/',
+    gitlink: 'https://github.com/winminthantdev/hotelbookings',
     language: ['HTML', 'Tailwind', 'Jquery', 'JSON', 'ReactJs']
   },
   {
@@ -175,9 +184,66 @@ export const projects = [
     details: 'A modern and responsive food delivery web app built with ReactJs and JSON for data handling. Features include product listings, category filters, and a simple cart interface — designed for fast food ordering and smooth user experience.',
     photo: fooddali,
     link: 'https://tomato-24y8.onrender.com/',
+    gitlink: 'https://github.com/winminthantdev/tomato',
     language: ['HTML', 'CSS', 'JSON', 'ReactJs']
+  },
+  {
+    id: 6,
+    title: 'Trip Joy',
+    details: 'A travel landing page design showcasing destinations, packages, and booking CTA. Built with Bootstrap and CSS for responsive layouts.',
+    photo: commingsoon,
+    link: 'https://winminthantdev.github.io/travellandingpage/',
+    gitlink: 'https://github.com/winminthantdev/travellandingpage',
+    language: ['HTML', 'CSS', 'JSON', 'Bootstrap']
+  },
+  {
+    id: 7,
+    title: 'TechnoLand',
+    details: 'A concept landing page for an education center featuring courses, categories, and promotional sections. Built with ReactJs for a fast and modern UI.',
+    photo: technoland,
+    link: 'https://technoland.onrender.com/',
+    gitlink: 'https://github.com/winminthantdev/technoland',
+    language: ['HTML', 'CSS', 'JSON', 'ReactJs']
+  },
+  {
+    id: 8,
+    title: 'PPT Project',
+    details: 'A software company portfolio landing page concept. Highlights services, team, and company branding using ReactJs and JSON.',
+    photo: pptsoftwarehouse,
+    link: 'https://pptsoftwarecompany.onrender.com/',
+    gitlink: 'https://github.com/winminthantdev/tomato',
+    language: ['HTML', 'CSS', 'JSON', 'ReactJs']
+  },
+  {
+    id: 9,
+    title: 'QuickBite',
+    details: 'A restaurant web app featuring food menus, categories, and order section. Designed with ReactJs for smooth interaction and fast loading.',
+    photo: quickbite,
+    link: 'https://quickbite-restaurant.onrender.com/',
+    gitlink: 'https://github.com/winminthantdev/quickbite',
+    language: ['HTML', 'CSS', 'JSON', 'ReactJs']
+  },
+  {
+    id: 10,
+    title: 'ThwarMal',
+    details: 'A simple travel website showcasing destinations, guides, and booking options. Built with HTML, CSS, and  JavaScript.',
+    photo: thwarmal,
+    link: 'https://winminthantdev.github.io/Travel-Website/',
+    gitlink: 'https://github.com/winminthantdev/Travel-Website',
+    language: ['HTML', 'CSS', 'Javascript']
+  },
+  {
+    id: 11,
+    title: 'Admin Template UI',
+    details: 'A clean and minimal admin template featuring sidebar navigation, tables, and cards. Built with pure HTML, CSS, and JavaScript for learning and practice.',
+    photo: commingsoon,
+    link: 'https://winminthantdev.github.io/myfirstadmintemplate/',
+    gitlink: 'https://github.com/winminthantdev/myfirstadmintemplate',
+    language: ['HTML', 'CSS', 'Javascript']
   }
 ];
+
+
 
 
 

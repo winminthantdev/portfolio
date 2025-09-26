@@ -44,13 +44,12 @@ export const photos = {
 export const datas = {
   home: {
     greeting: "Win Min Thant",
-    tagline: "Passionate Full Stack Developer & UI/UX Designer",
+    tagline: "Passionate Full Stack Developer",
     intro:
       "I craft responsive websites and engaging user interfaces with React.js, Tailwind CSS, and modern web technologies.",
   },
   about: {
-    description:
-      "I'm Win Min Thant, a developer currently focused on full-stack web development. I'm studying Computer Science at the University of the People, with previous studies at Yadanabon University paused due to the political situation. I have hands-on experience in mobile phone repair, have worked as a computer teaching assistant, and actively share tech knowledge through my digital content pages. I'm building projects using PHP, React.js, Laravel, MySQL, and Tailwind CSS, aiming to create practical and user-friendly web applications.",
+    description: "Hi, I’m Win Min Thant — a Full Stack Developer passionate about building modern, responsive, and user-friendly web applications. I specialize in React.js, PHP (Laravel), and MySQL, with additional skills in Tailwind CSS, Bootstrap, Firebase, and jQuery. I’m currently studying Computer Science at the University of the People, after pausing my studies at Yadanabon University due to the political situation. Alongside development, I’ve gained hands-on experience in mobile phone repair and worked as a computer teaching assistant.\n I also run several digital content pages where I share tech knowledge, IT solutions, and updates on modern technologies. My passion lies in solving real-world problems through clean code, performance optimization, and user-centric design.",
     resumeLink: "/resume/winminthant.pdf",
   },
   projects: [

@@ -19,8 +19,8 @@ function App() {
         <section id="about"><AboutPage /></section>
         <section id="projects"><ProjectPage /></section>
         {/* UI/UX section */}
-        <section id="uiux"><UiUxPage /></section>
-        <section id="certificate"><CertificatePage /></section>
+        {/* <section id="uiux"><UiUxPage /></section> */}
+        {/* <section id="certificate"><CertificatePage /></section> */}
         <section id="contact"><ContactPage /></section>
       </main>
       <Footer />

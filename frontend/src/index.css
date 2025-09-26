@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
 :root {
   --color-bg-start: #0f172a;       /* Dark navy - gradient start background */
   --color-bg-end: #1e293b;         /* Slate gray - gradient end background */
@@ -12,13 +14,13 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
   scroll-behavior: smooth;
   user-select: none;
+  font-family: "Michroma", sans-serif;
+
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
   min-height: 100vh;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: var(--color-text-primary); 

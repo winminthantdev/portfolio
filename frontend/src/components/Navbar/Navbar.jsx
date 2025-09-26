@@ -26,23 +26,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Gooey Filter */}
-      <svg style={{ display: "none" }}>
-        <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-          <feColorMatrix
-            in="blur"
-            type="matrix"
-            values="1 0 0 0 0
-                    0 1 0 0 0
-                    0 0 1 0 0
-                    0 0 0 20 -10"
-            result="goo"
-          />
-          <feBlend in="SourceGraphic" in2="goo" />
-        </filter>
-      </svg>
-
       {/* Desktop Navbar */}
       <motion.nav
         initial={{ y: -100, opacity: 0, width: "80%" }}
@@ -52,7 +35,7 @@ const Navbar = () => {
           width: scrolled ? "60%" : "80%",
         }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="hidden lg:flex fixed top-6 left-1/2 -translate-x-1/2 z-50 justify-between items-center bg-white/20 backdrop-blur-md border border-white/30 rounded-full shadow-lg px-6 py-3"
+        className="hidden lg:flex fixed top-6 left-1/2 -translate-x-1/2 z-50 justify-between items-center bg-white/10 backdrop-blur-md border border-white/30 rounded-full shadow-lg px-6 py-3"
         style={{ filter: "url(#goo)" }}
       >
         {/* Logo */}
@@ -87,15 +70,6 @@ const Navbar = () => {
             </motion.li>
           ))}
         </ul>
-
-        {/* Download CV
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 300 }}
-          className="text-white"
-        >
-          Download CV
-        </motion.a> */}
       </motion.nav>
 
       {/* Mobile Menu Button */}
@@ -167,17 +141,6 @@ const Navbar = () => {
                     </a>
                   </motion.li>
                 ))}
-
-                {/* Mobile Download Resume */}
-                <motion.li>
-                  <a
-                    href={datas.about.resumeLink}
-                    download
-                    className="block text-center bg-blue-600 text-white px-5 py-2 rounded-xl font-medium shadow hover:bg-blue-700 transition"
-                  >
-                    Download CV
-                  </a>
-                </motion.li>
               </ul>
             </div>
           </motion.div>

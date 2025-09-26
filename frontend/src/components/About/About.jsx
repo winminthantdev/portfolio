@@ -4,17 +4,8 @@ import { FaCode, FaRegStar } from 'react-icons/fa6';
 const About = () => {
   return (
     
-    <section className="flex flex-col items-center p-8 md:p-16" style={{color: "var(--color-text-primary)"}}>
-      <h2 className="text-4xl text-gray-500 mb-4">About Me</h2>
-      <div className="flex justify-center items-center gap-4 mb-4">
-          <div className="h-px w-24 bg-gradient-to-r from-transparent  to-white"></div>
-          <FaRegStar />
-          <div className="h-px w-24 bg-gradient-to-r from-white  to-transparent"></div>
-      </div>
-
-
+    <section>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-
         <div className="space-y-4 text-sm leading-relaxed">
           <p className="text-xs uppercase tracking-wider text-primary font-semibold">
             Who am I?
